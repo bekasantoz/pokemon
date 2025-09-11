@@ -73,19 +73,19 @@ body.addEventListener("keydown", (event) => {
             break;
         case "ArrowRight":
             if (getLeftPosition() < maxLeft) {
-                ash.src = 'right.png';
+                ash.src ='right.png';
                 ash.style.left = `${getLeftPosition() + 8}px`;
             }
             break;
         case "ArrowDown":
             if (getBottomPosition() > minEdge) {
-                ash.src = 'front.png';
+                ash.src ='front.png';
                 ash.style.bottom = `${getBottomPosition() - 8}px`;
             }
             break;
         case "ArrowUp":
             if (getBottomPosition() < maxBottom) {
-                ash.src = 'back.png';
+                ash.src ='back.png';
                 ash.style.bottom = `${getBottomPosition() + 8}px`;
             }
             break;
@@ -101,7 +101,7 @@ body.addEventListener("keydown", (event) => {
 musicControl.addEventListener('click', (event) => {
     event.stopPropagation();
     const isOn = event.target.src.includes('on');
-    event.target.src = isOn ? 'music-off.png' : 'on.png';
+    event.target.src = isOn ?'music-off.png':'on.png';
     audio.paused ? audio.play() : audio.pause();
 });
 
@@ -110,7 +110,7 @@ reset.addEventListener('click', () => {
     // Reset posição Ash
     ash.style.left = "2px";
     ash.style.bottom = "100px";
-    ash.src = "front.png";
+    ash.src ='front.png';
 
     // Reset placar
     score = 0;
@@ -122,5 +122,6 @@ reset.addEventListener('click', () => {
         pokemon.style.display = "none";
     });
 });
+
 
 
