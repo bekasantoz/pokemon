@@ -97,7 +97,7 @@ h1 {
     25%, 75% { opacity: 0.7; }
 }
 .game {
-    background-image: url('../assets/scene.jpg');
+    background-image: url('scene.jpg');
     background-size: cover;
     background-position: center;
     width: 1000px;
@@ -164,4 +164,5 @@ h1 {
     bottom: 15%;
     right: 5%;
     animation: float 10s infinite ease-in-out reverse;
+
 }
