@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <title>Pokémon Adventure</title>
+</header>
+<body>
+
+    <!-- Decorações de fundo -->
+    <div class="decoration"></div>
+    <div class="decoration"></div>
+    <div class="decoration"></div>
+    <div class="decoration"></div>
+    <div class="decoration"></div>
+    
+    <!-- Cabeçalho / Título -->
+    <h1>POKÉMON ADVENTURE</h1>
+    <div class="subtitle">USE AS SETAS PARA MOVER O ASH E CAPTURAR POKÉMONS
+        | Encontre e capture todos os Pokémons! Use as setas do teclado para se mover.
+        </div>
+    </header>
+
+    <!-- Controle de música -->
+    <div class="controls">
+        <img src="assets/icons/on.png" alt="Volume" id="music-control" class="music-control">
+        <audio id="audio" src="assets/sound.mp3" loop></audio>
+        
+        <!-- Botão de reset -->
+        <img src="assets/icons/reset.png" alt="Reset" id="reset">
+    </div>
+
+    <!-- Placar -->
+    <!--<div id="score">Pontos: 0</div>-->
+    <div id="score">Pokémons capturados: 0</div>
+    <!-- Área do jogo -->
+    <main class="game">
+        <!-- Personagens -->
+        <img src="assets/front.png" alt="Ash" class="character" id="ash">
+        <img src="assets/pokemons/pikachu.png" alt="Pikachu" class="character" id="pikachu">
+        <img src="assets/pokemons/zubat.png" alt="Zubat" class="character" id="zubat">
+        <img src="assets/pokemons/charmander.png" alt="Charmander" class="character" id="charmander">
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer title-container"><br>
+       <p></p> <p>Clique no ícone de música para ligar/desligar o som.</p>
+    </footer>
+
+    <!-- Script -->
+    <script src="js/script.js"></script>
+</body>
+</html>

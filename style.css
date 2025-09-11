@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Press Start 2P', cursive, sans-serif;
+    background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+    position: relative;
+    flex-direction: column;
+    padding: 20px;
+    overflow-x: hidden;
+    color: #fff;
+}
+
+#score {
+    position: unset;
+    top: 10px;
+    left: 10px;
+    font-size: 16px;
+    z-index: 3;
+    font-family: 'VT323', monospace;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 2px solid #ffcc00;
+    text-shadow: 1px 1px #000;
+}
+
+#reset {
+    position: absolute;
+    z-index: 3;
+    width: 50px;
+    height: 50px;
+    top: 150px;
+    right: 60px;
+    cursor: pointer;
+}
+
+#reset:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+
+.music-control {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 48px;
+    right: 48px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 36px;
+    color: #ffcc00;
+    text-align: center;
+    margin: 10px 0 15px 0;
+    z-index: 5;
+    position: relative;
+    text-shadow:
+        2px 2px 0 #3864ac,
+        4px 4px 0 #ff0000,
+        6px 6px 0 rgba(0,0,0,0.5); 
+    animation: shake 0.5s infinite alternate; 
+}
+
+
+.subtitle {
+    font-family: 'VT323', monospace;
+    font-size: 20px;
+    color: #00ffcc;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px #000; 
+    animation: blink 1s infinite; 
+}
+
+@keyframes shake {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(-1px, 1px); }
+    50% { transform: translate(1px, -1px); }
+    75% { transform: translate(-1px, -1px); }
+    100% { transform: translate(1px, 1px); }
+}
+
+
+@keyframes blink {
+    0%, 50%, 100% { opacity: 1; }
+    25%, 75% { opacity: 0.7; }
+}
+.game {
+    background-image: url('../assets/scene.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 1000px;
+    height: 620px;
+    position: relative;
+    image-rendering: pixelated;
+    border: 2px solid red;
+}
+
+.character {
+    width: 75px;
+    height: 100px;
+    object-fit: cover;
+    position: absolute;
+}
+
+#ash 
+{
+    z-index: 1;
+    position: absolute;
+    left: 2px;
+    bottom: 100px;
+}
+
+#pikachu 
+{
+    right: 600px;
+    top: 330px;
+    display:none;
+}
+
+#zubat 
+{
+    right: 90px;
+    top: 550px;
+    display:none;
+}
+
+#charmander 
+{
+    width: 65px;
+    right: 175px;
+    top: 55px;
+    display:none;
+}
+.decoration 
+{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.decoration:nth-child(1) 
+{
+    top: 10%;
+    left: 5%;
+    animation: float 8s infinite ease-in-out;
+}
+
+.decoration:nth-child(2) 
+{
+    bottom: 15%;
+    right: 5%;
+    animation: float 10s infinite ease-in-out reverse;
+}
