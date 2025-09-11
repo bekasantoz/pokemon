@@ -67,25 +67,25 @@ body.addEventListener("keydown", (event) => {
     switch (event.code) {
         case "ArrowLeft":
             if (getLeftPosition() > minEdge) {
-                ash.src = "left.png";
+                ash.src = 'left.png';
                 ash.style.left = `${getLeftPosition() - 8}px`;
             }
             break;
         case "ArrowRight":
             if (getLeftPosition() < maxLeft) {
-                ash.src = "right.png";
+                ash.src = 'right.png';
                 ash.style.left = `${getLeftPosition() + 8}px`;
             }
             break;
         case "ArrowDown":
             if (getBottomPosition() > minEdge) {
-                ash.src = "front.png";
+                ash.src = 'front.png';
                 ash.style.bottom = `${getBottomPosition() - 8}px`;
             }
             break;
         case "ArrowUp":
             if (getBottomPosition() < maxBottom) {
-                ash.src = "back.png";
+                ash.src = 'back.png';
                 ash.style.bottom = `${getBottomPosition() + 8}px`;
             }
             break;
@@ -122,4 +122,5 @@ reset.addEventListener('click', () => {
         pokemon.style.display = "none";
     });
 });
+
 
