@@ -67,25 +67,25 @@ body.addEventListener("keydown", (event) => {
     switch (event.code) {
         case "ArrowLeft":
             if (getLeftPosition() > minEdge) {
-                ash.src = "assets/left.png";
+                ash.src = "left.png";
                 ash.style.left = `${getLeftPosition() - 8}px`;
             }
             break;
         case "ArrowRight":
             if (getLeftPosition() < maxLeft) {
-                ash.src = "assets/right.png";
+                ash.src = "right.png";
                 ash.style.left = `${getLeftPosition() + 8}px`;
             }
             break;
         case "ArrowDown":
             if (getBottomPosition() > minEdge) {
-                ash.src = "assets/front.png";
+                ash.src = "front.png";
                 ash.style.bottom = `${getBottomPosition() - 8}px`;
             }
             break;
         case "ArrowUp":
             if (getBottomPosition() < maxBottom) {
-                ash.src = "assets/back.png";
+                ash.src = "back.png";
                 ash.style.bottom = `${getBottomPosition() + 8}px`;
             }
             break;
@@ -101,7 +101,7 @@ body.addEventListener("keydown", (event) => {
 musicControl.addEventListener('click', (event) => {
     event.stopPropagation();
     const isOn = event.target.src.includes('on');
-    event.target.src = isOn ? 'assets/icons/music-off.png' : 'assets/icons/on.png';
+    event.target.src = isOn ? 'music-off.png' : 'on.png';
     audio.paused ? audio.play() : audio.pause();
 });
 
@@ -110,7 +110,7 @@ reset.addEventListener('click', () => {
     // Reset posição Ash
     ash.style.left = "2px";
     ash.style.bottom = "100px";
-    ash.src = "assets/front.png";
+    ash.src = "front.png";
 
     // Reset placar
     score = 0;
@@ -122,3 +122,4 @@ reset.addEventListener('click', () => {
         pokemon.style.display = "none";
     });
 });
+
