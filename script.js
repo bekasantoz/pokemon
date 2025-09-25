@@ -46,7 +46,6 @@ function isCollision(pokemon) {
 // Checa se Ash encontrou algum Pokémon
 function checkPokemons() {
     pokemons.forEach((pokemon) => {
-        if (!pokemon.captured && isCollision(pokemon) && pokemon.style.display !== "none") {
             pokemon.captured = true;
             pokemon.style.display = "none"; // esconde ao capturar
             score += 10;
@@ -122,6 +121,7 @@ reset.addEventListener('click', () => {
         pokemon.style.display = "block"; // ou ""
     });
 });
+
 
 
 
