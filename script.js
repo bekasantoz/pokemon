@@ -119,9 +119,11 @@ reset.addEventListener('click', () => {
     // Reset Pokémons
     pokemons.forEach(pokemon => {
         pokemon.captured = false;
-        pokemon.style.display = "none";
+        pokemon.style.display = "block"; // ou ""
     });
 });
+
+
 
 
 
