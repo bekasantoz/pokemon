@@ -126,14 +126,14 @@ h1 {
 {
     right: 600px;
     top: 330px;
-    display:none;
+    display:hidden;
 }
 
 #zubat 
 {
     right: 90px;
     top: 550px;
-    display:none;
+    display:hidden;
 }
 
 #charmander 
@@ -141,7 +141,7 @@ h1 {
     width: 65px;
     right: 175px;
     top: 55px;
-    display:none;
+    display:hidden;
 }
 .decoration 
 {
@@ -166,5 +166,6 @@ h1 {
     animation: float 10s infinite ease-in-out reverse;
 
 }
+
 
 
